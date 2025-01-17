@@ -343,3 +343,151 @@ footer {
     position: relative;
 }
 
+/* Tablettes et petits écrans */
+@media screen and (max-width: 1024px) {
+    .container {
+        width: 100%;
+        height: auto;
+        padding: 0 20px;
+    }
+
+    .left-section, .right-section {
+        position: static;
+        width: 100%;
+        height: auto;
+        margin: 20px 0;
+    }
+
+    .header-text h1 {
+        font-size: 60px;
+    }
+
+    .header-text h1::after {
+        width: 200px;
+        left: 100px;
+    }
+
+    .header-text h1::before {
+        left: 290px;
+    }
+
+    .header-image {
+        width: 100%;
+        right: 0;
+    }
+
+    .small-images {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .small-image1, .small-image2 {
+        position: static;
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .grid {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .left-grid, .right-grid {
+        width: 100%;
+    }
+}
+
+/* Mobiles */
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .logo {
+        margin-bottom: 1rem;
+    }
+
+    .logo img {
+        margin-right: 0;
+        height: 50px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        margin: 1rem 0;
+    }
+
+    .search-bar {
+        width: 100%;
+        margin: 1rem 0;
+    }
+
+    .search-bar input {
+        width: 100%;
+    }
+
+    .icons {
+        margin: 1rem 0;
+        justify-content: center;
+    }
+
+    .header-text h1 {
+        font-size: 40px;
+    }
+
+    .header-text h1::after {
+        width: 150px;
+        left: 80px;
+        top: 25px;
+    }
+
+    .header-text h1::before {
+        left: 220px;
+        top: 20px;
+    }
+
+    .header-text p {
+        font-size: 16px;
+        margin-top: 60px;
+    }
+
+    .grid-item1, .grid-item2, .grid-item3, .grid-item4 {
+        height: 300px;
+    }
+
+    .hashtag {
+        font-size: 24px;
+    }
+}
+
+/* Très petits écrans */
+@media screen and (max-width: 480px) {
+    .header-text h1 {
+        font-size: 32px;
+    }
+
+    .header-text h1::after {
+        width: 100px;
+        left: 60px;
+    }
+
+    .header-text h1::before {
+        left: 150px;
+    }
+
+    .header-text p {
+        font-size: 14px;
+    }
+
+    .grid-item1, .grid-item2, .grid-item3, .grid-item4 {
+        height: 200px;
+    }
+
+    .hashtag {
+        font-size: 20px;
+    }
+}

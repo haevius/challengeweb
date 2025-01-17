@@ -177,3 +177,164 @@ footer {
     width: 100%;
     position: relative;
 }
+
+/* Tablettes et écrans moyens */
+@media screen and (max-width: 1024px) {
+    header {
+        max-width: 95%;
+        padding: 0.5rem 1rem;
+    }
+
+    .logo img {
+        height: 60px;
+        margin-right: 100px;
+    }
+
+    .nav-links {
+        gap: 1.5rem;
+    }
+
+    .search-bar {
+        width: 150px;
+    }
+
+    .catalogue {
+        max-width: 95%;
+        padding: 1.5rem;
+    }
+
+    .catalogue3 {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .catalogue3 img {
+        width: 100%;
+        height: 250px;
+    }
+}
+
+/* Tablettes et petits écrans */
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 1rem;
+        gap: 1rem;
+    }
+
+    .logo {
+        margin-bottom: 0.5rem;
+    }
+
+    .logo img {
+        height: 50px;
+        margin-right: 0;
+    }
+
+    .nav-links {
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .search-bar {
+        margin: 0.5rem 0;
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .icons {
+        margin-left: 0;
+        justify-content: center;
+    }
+
+    .catalogue3 {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+
+    .catalogue3 img {
+        height: 200px;
+    }
+
+    .titre {
+        font-size: 1.75rem;
+    }
+}
+
+/* Mobiles */
+@media screen and (max-width: 480px) {
+    header {
+        max-width: 100%;
+        border-radius: 0;
+        border-left: none;
+        border-right: none;
+        margin: 0;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.75rem;
+    }
+
+    .nav-links a {
+        font-size: 0.9rem;
+    }
+
+    .search-bar input {
+        width: 8rem;
+    }
+
+    .icons {
+        gap: 1rem;
+    }
+
+    .catalogue {
+        padding: 1rem;
+        margin-bottom: 3rem;
+        border-radius: 0;
+    }
+
+    .catalogue3 {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .catalogue3 img {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 1;
+    }
+
+    .titre {
+        font-size: 1.5rem;
+    }
+
+    .catalogue3 h3 {
+        font-size: 0.9rem;
+    }
+
+    .catalogue3 p {
+        font-size: 1.1rem;
+    }
+}
+
+/* Très petits écrans */
+@media screen and (max-width: 320px) {
+    .search-bar {
+        padding: 0.25rem 0.5rem;
+    }
+
+    .search-bar input {
+        width: 6rem;
+    }
+
+    .icons img {
+        height: 20px;
+    }
+
+    .titre {
+        font-size: 1.25rem;
+    }
+}
