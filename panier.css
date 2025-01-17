@@ -1,0 +1,261 @@
+body {
+    font-family: 'Prompt', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 2rem;
+    border: 4px solid #e6e6e6;
+    border-radius: 1.5rem;
+    max-width: 90%;
+    margin: 0.5rem auto;
+    background-color: white;
+    position: sticky;
+    top: 0.5rem;
+    z-index: 1000;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 70px;
+    margin-right: 200px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.nav-links :hover {
+    color: #4F39F6;
+    transform: scale(1.05);
+    transition: color 0.3s ease, transform 0.3s ease; /* Add transition for smooth animation */
+
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    background-color: #f4f4f4;
+    border-radius: 50px;
+    padding: 0.5rem 0.75rem;
+    margin-left: auto;
+}
+
+.search-bar img {
+    width: 30px;
+    height: 28px;
+}
+
+.search-bar input {
+    border: none;
+    background: none;
+    outline: none;
+    font-size: 1rem;
+    color: #999;
+    margin-left: 0.5rem;
+    width: 10rem;
+    height: 1rem;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-left: 50px;
+}
+
+.icons img {
+    height: 24px;
+    cursor: pointer;
+}
+
+.icon3 {
+    bottom: 3px;
+}
+
+.titre {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 2;
+    color: #333333;
+    text-transform: uppercase;
+    line-height: 0.8;
+    text-align: center;
+    font-style: italic;
+}
+
+.cart-container {
+    max-width: 1000px;
+    margin: 50px auto;
+    width: 90%;
+}
+
+.cart-items {
+    margin-bottom: 40px;
+}
+
+.cart-item {
+    display: grid;
+    grid-template-columns: 100px 1fr auto;
+    gap: 20px;
+    align-items: center;
+    padding: 20px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.item-image img {
+    width: 100%;
+    height: 200px;
+    width: 180px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.item-details h3 {
+    font-size: 1.1em;
+    margin-bottom: 2px;
+    margin-left: 80px;
+    font-weight: 500;
+    margin-top: 0px;
+}
+
+.volume {
+    color: #888;
+    font-size: 14px;
+    margin-bottom: 120px;
+    margin-left: 80px;
+    margin-top: 2px;
+    font-weight: 100px;
+}
+
+.stock-status, .delivery-status {
+    font-size: 15px;
+    margin-left: 80px;
+}
+
+.in-stock {
+    color: #4CAF50;
+}
+
+.delivery-time {
+    color: #888;
+}
+
+.price-remove {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 5px;
+}
+
+.item-price {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.remove-btn {
+    background: none;
+    border: none;
+    color: #6366F1;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.remove-btn:hover {
+    color: #3d2cc4;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.price-actions {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 130px;
+}
+
+.cart-summary {
+    text-align: right;
+}
+
+.subtotal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.total-price {
+    font-size: 25px;
+    font-weight: 550;
+    margin-top: 15px;
+}
+
+.shipping-note {
+    color: #888;
+    margin-bottom: 30px;
+    display: block;
+    text-align: left;
+}
+
+.subtotal h3 {
+    margin: 0;
+    margin-bottom: 3px;
+}
+
+.checkout-btn {
+    background-color: #4F39F6;
+    color: white;
+    border: none;
+    padding: 1rem;
+    width: 100%;
+    margin-bottom: 20px;
+    font-weight: 600;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.checkout-btn:hover {
+    background-color: #3d2cc4;
+}
+
+.continue-shopping {
+    color: #6366F1;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}
+
+.continue-shopping:hover {
+    color: #3d2cc4;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+footer {
+    background-color: #d9d9d990;
+    padding: 0.5rem;
+    text-align: center;
+    width: 100%;
+    position: relative;
+}

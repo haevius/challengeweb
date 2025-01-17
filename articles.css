@@ -1,0 +1,179 @@
+body {
+    font-family: 'Prompt', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 2rem;
+    border: 4px solid #e6e6e6;
+    border-radius: 1.5rem;
+    max-width: 90%;
+    margin: 0.5rem auto;
+    background-color: white;
+    position: sticky;
+    top: 0.5rem;
+    z-index: 1000;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 70px;
+    margin-right: 200px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.nav-links :hover {
+    color: #4F39F6;
+    transform: scale(1.05);
+    transition: color 0.3s ease, transform 0.3s ease; /* Add transition for smooth animation */
+
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    background-color: #f4f4f4;
+    border-radius: 50px;
+    padding: 0.5rem 0.75rem;
+    margin-left: auto;
+}
+
+.search-bar img {
+    width: 30px;
+    height: 28px;
+}
+
+
+.search-bar input {
+    border: none;
+    background: none;
+    outline: none;
+    font-size: 1rem;
+    color: #999;
+    margin-left: 0.5rem;
+    width: 10rem;
+    height: 1rem;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-left: 50px;
+}
+
+.icons img {
+    height: 24px;
+    cursor: pointer;
+}
+
+.icon3 {
+    bottom: 3px;
+}
+
+
+.catalogue {
+    background-color: #ffffff;
+    padding: 2rem 2rem;
+    margin: 1rem auto;
+    border-radius: 0.75rem;
+    border: 2px solid #98988d3b;
+    max-width: 90%;
+    margin-bottom: 5rem;
+}
+
+.catalogue2 {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.titre {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    color: #333333;
+    text-transform: uppercase;
+    line-height: 0.8;
+    text-align: center;
+    font-style: italic;
+}
+
+.catalogue3 .product {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    max-width: 250px;
+}
+
+.catalogue3 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    padding: 0 1rem;
+    position: relative;
+}
+
+.catalogue3 img {
+    width: 275px;
+    height: 307px; 
+    object-fit: cover;
+    border-radius: 0.5rem;
+    transition: transform 0.3s ease, opacity 0.3s ease, filter 0.3s ease;
+    background-color: #ffffff;
+    margin-bottom: 0rem;
+}
+
+.catalogue3 img:hover {
+    transform: scale(1.05);
+    opacity: 0.5;
+}
+
+.catalogue3 h3 {
+    font-size: 1rem;
+    font-weight: 200;
+    color: #4a4a4a;
+    margin-top: 5px;
+}
+
+.catalogue3 p {
+    margin-top: 0.5rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #111111;
+}
+
+.catalogue3 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    padding: 0 1rem;
+}
+
+footer {
+    background-color: #d9d9d990;
+    padding: 1rem;
+    text-align: center;
+    width: 100%;
+    position: relative;
+}

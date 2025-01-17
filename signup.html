@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription - Glow Skinlab</title>
+    <link rel="stylesheet" href="signup.css">
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo.png" alt="Glow Skinlab Logo">
+        </div>
+    
+        <nav class="nav-links">
+            <a href="accueil.html">ACCUEIL</a>
+            <a href="articles.html">NOS PRODUITS</a>
+            <a href="#footer">NOUS CONTACTER</a>
+        </nav>
+    
+        <div class="search-bar">
+            <img src="images/search.png" alt="Search Icon">
+            <input type="text" placeholder="Rechercher">
+        </div>
+    
+        <div class="icons">
+            <a href="panier.html"><img src="images/accueil/panier.png" alt="Shopping Bag Icon"></a>
+            <a href="login.html"><img src="images/accueil/profil.png" alt="User Icon"></a>
+            <div class="icon3">
+                <img src="images/accueil/réglages.png" alt="Settings Icon">
+            </div>
+        </div>
+    </header>
+    <section class="container">
+        <div class="signup-container">
+            <h1>Créez un compte</h1>
+            
+            <form action="#" method="POST" class="signup-form">
+                <div class="name-group">
+                    <div class="form-group">
+                        <label for="firstname">Prénom<span class="required">*</span></label>
+                        <input type="text" id="firstname" name="firstname" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="lastname">Nom<span class="required">*</span></label>
+                        <input type="text" id="lastname" name="lastname" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Adresse email<span class="required">*</span></label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Mot de passe<span class="required">*</span></label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="confirm-password">Confirmation du mot de passe<span class="required">*</span></label>
+                    <input type="password" id="confirm-password" name="confirm-password" required>
+                </div>
+
+                <p class="required-fields">champs obligatoires*</p>
+
+                <button type="submit">
+                    s'inscrire
+                </button>
+            </form>
+            <p class="signup-text"></p>
+            <a href="login.html" class="signup-button">J'ai déjà un compte</a>
+            </p>
+        </div>
+    </section>
+
+    <footer id="footer">
+        <h2>NOS CONTACTS</h2>
+        <p>contact@glowlab.com
+        <br>
+        +33 01 23 45 67 89</p>
+        <h4>Copyright © 2025 GLOWSKINLAB.COM LTD. Tous droits réservés.</h4>
+    </footer>
+</body>
+</html>

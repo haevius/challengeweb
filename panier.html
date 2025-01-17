@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Votre panier</title>
+    <link rel="stylesheet" href="panier.css">
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo.png" alt="Glow Skinlab Logo">
+        </div>
+    
+        <nav class="nav-links">
+            <a href="accueil.html">ACCUEIL</a>
+            <a href="articles.html">NOS PRODUITS</a>
+            <a href="#footer">NOUS CONTACTER</a>
+        </nav>
+    
+        <div class="search-bar">
+            <img src="images/search.png" alt="Search Icon">
+            <input type="text" placeholder="Rechercher">
+        </div>
+    
+        <div class="icons">
+            <a href="panier.html"><img src="images/panier/EF2D4F00-D9B9-405D-BA0B-1805D2321EDC.jpg" alt="Shopping Bag Icon"></a>
+            <a href="login.html"><img src="images/accueil/profil.png" alt="User Icon"></a>
+            <div class="icon3">
+                <img src="images/accueil/réglages.png" alt="Settings Icon">
+            </div>
+        </div>
+    </header>
+
+    <main class="cart-container">
+        <h2 class="titre">VOTRE PANIER <img src="images/stars.png" width="27" height="24"></h2>
+        <div class="cart-items">
+            <!-- Item 1 -->
+            <div class="cart-item">
+                <div class="item-image">
+                    <img src="images/panier/95051da96a2ef69eda3dabe406265f7b.jpg" alt="Innisfree Cleanser">
+                </div>
+                <div class="item-details">
+                    <h3>Innisfree Jeju Cherry Blossom Jam Cleanser</h3>
+                    <p class="volume">150ml</p>
+                    <div class="stock-status">
+                        <span class="in-stock">✓ En stock</span>
+                    </div>
+                </div>
+                <div class="price-actions">
+                    <div class="item-price">12€</div>
+                    <button class="remove-btn">Retirer</button>
+                </div>
+            </div>
+
+            <!-- Item 2 -->
+            <div class="cart-item">
+                <div class="item-image">
+                    <img src="images/panier/373c63_7e1198bd588f481583cfe52e9ff23aef~mv2.jpg.webp" alt="Round Lab Cleanser">
+                </div>
+                <div class="item-details">
+                    <h3>Round Lab 1025 Dokdo Cleanser</h3>
+                    <p class="volume">20ml</p>
+                    <div class="delivery-status">
+                        <span class="delivery-time">◷ Livré sous 4 à 7 jours</span>
+                    </div>
+                </div>
+                <div class="price-actions">
+                    <div class="item-price">7€</div>
+                    <button class="remove-btn">Retirer</button>
+                </div>
+            </div>
+
+            <!-- Item 3 -->
+            <div class="cart-item">
+                <div class="item-image">
+                    <img src="images/panier/4d63b408d096bcb22aa14a6125c0fb0f.jpg" alt="logo de panier">
+                </div>
+                <div class="item-details">
+                    <h3>Innisfree Jeju Cherry Blossom Jam Cleanser</h3>
+                    <p class="volume">150ml</p>
+                    <div class="stock-status">
+                        <span class="in-stock">✓ En stock</span>
+                    </div>
+                </div>
+                <div class="price-remove">
+                    <div class="price-actions">
+                        <div class="item-price">12€</div>
+                        <button class="remove-btn">Retirer</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="cart-summary">
+            <div class="subtotal">
+                <h3>Sous total</h3>
+                <span class="total-price">41€</span>
+            </div>
+            <p class="shipping-note">Les frais de port seront calculés après avoir finalisé la commande.</p>
+            <button class="checkout-btn">finaliser la commande</button>
+            <a href="articles.html" class="continue-shopping">Continuer vos achats →</a>
+        </div>
+    </main>
+    
+    <footer id="footer">
+        <h2>NOS CONTACTS</h2>
+        <p>contact@glowlab.com
+        <br>
+        +33 01 23 45 67 89</p>
+        <h4>Copyright © 2025 GLOWSKINLAB.COM LTD. Tous droits réservés.</h4>
+    </footer>
+</body>
+</html>
